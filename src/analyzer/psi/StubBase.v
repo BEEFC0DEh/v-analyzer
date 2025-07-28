@@ -63,7 +63,8 @@ pub fn new_root_stub(path string) &StubBase {
 		parent_id: -1
 		stub_type: .root
 	}
-	stub_list.add_stub(mut stub, unsafe { nil })
+	empty:= unsafe { nil }
+	stub_list.add_stub(mut stub, empty)
 	return stub
 }
 
